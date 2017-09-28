@@ -1,0 +1,30 @@
+{
+  "name": "redux-force-graph-example",
+  "version": "1.0.0",
+  "description": "A force oriented graph example using vx and redux-force.",
+  "main": "public/index.html",
+  "author": "lutangar <johan.dufour@gmai.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vx/network": "0.0.140",
+    "babel-polyfill": "^6.9.1",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-redux": "^5.0.6",
+    "reduce-merge-reducers": "^0.2.3",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "serve": "webpack-dev-server --hot --inline --config ./webpack.config.js",
+    "install" : "webpack && npm run serve"
+  },
+  "devDependencies": {
+    "babel-core": "~6.25.0",
+    "babel-loader": "~7.1.1",
+    "babel-plugin-transform-react-jsx": "~6.8.0",
+    "babel-polyfill": "~6.9.1",
+    "babel-preset-airbnb": "^2.4.0",
+    "webpack": "~3.0.0",
+    "webpack-dev-server": "~2.5.0"
+  }
+}
