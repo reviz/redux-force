@@ -1,2 +1,2 @@
 # redux-force
-Force-directed graph layout implemented for redux
+Force-directed graph layout for redux
