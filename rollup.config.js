@@ -4,7 +4,7 @@ import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify';
 import commonjs from 'rollup-plugin-commonjs';
 
-var env = process.env.NODE_ENV
+var env = process.env.NODE_ENV;
 var config = {
   output: {
     format: 'umd',
@@ -31,7 +31,7 @@ var config = {
       }
     })
   ],
-}
+};
 
 if (env === 'production') {
   config.plugins.push(

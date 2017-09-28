@@ -1,18 +1,14 @@
 {
-  "presets": [
-    [
-      "airbnb",
-      {
-        "modules": false
-      }
-    ]
-  ],
-  "plugins": [
-    "external-helpers"
-  ],
   "env": {
     "test": {
+      "presets": ["airbnb"],
       "plugins": ["istanbul"]
+    },
+    "cjs": {
+      "presets": [["airbnb", { "loose": true }]]
+    },
+    "es": {
+      "presets": [["airbnb", { "loose": true, "modules": false }]]
     }
   }
 }
