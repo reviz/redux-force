@@ -18,7 +18,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            'redux-force': path.join(__dirname, '..', 'src'),
+            'redux-force': path.join(__dirname, '..', 'lib'),
         },
     },
 };
