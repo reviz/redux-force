@@ -29,3 +29,5 @@ matrix:
     - os: osx
     - env: TEST=true ALLOW_FAILURE=true
     - node_js: "iojs"
+    - node_js: "0.12"
+    - node_js: "0.10"
