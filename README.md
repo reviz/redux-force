@@ -6,7 +6,7 @@ Force-directed graph layout for redux.
 > math & physics credits goes to [d3-force](https://github.com/d3/d3-force)
 
 `redux-force`
-- **exposes** a set of **specialized reducers** which work together to apply forces to a simulation
+- **exposes** a set of **specialized reducers** whi ch work together to apply forces to a simulation
 - **expose a set of actions** to add `links` and `nodes` and update the simulation
 - **does not provide** a graphical representation by default but plays well with `react`
 
@@ -15,7 +15,7 @@ Force-directed graph layout for redux.
 1. Setup the reducers:
 ```
 import reduceMergeReducers from "reduce-merge-reducers";
-import simulation, { forceLink, forceManyBody, forceCollide, forceX, forceY, velocityDecay } from "redux-force";
+import simulation, { forceLink, ..., velocityDecay } from "redux-force";
 
 export default reduceMergeReducers(
   simulation(), // creates the simulation state first
