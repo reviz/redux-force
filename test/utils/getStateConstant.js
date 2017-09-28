@@ -8,9 +8,9 @@ describe("getStateConstant", () => {
   });
 
   it("returns a function whatever was fed", () => {
-    expect(getStateConstant(undefined)).to.be.a('function');
-    expect(getStateConstant(3)).to.be.a('function');
-    expect(getStateConstant(null)).to.be.a('function');
-    expect(getStateConstant('foo')).to.be.a('function');
+    expect(getStateConstant(undefined)).to.be.a("function");
+    expect(getStateConstant(3)).to.be.a("function");
+    expect(getStateConstant(null)).to.be.a("function");
+    expect(getStateConstant("foo")).to.be.a("function");
   });
 });
