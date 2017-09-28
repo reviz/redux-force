@@ -1,14 +1,13 @@
-import reduceMergeReducers from "reduce-merge-reducers";
-import reduceReducers from "reduce-reducers";
-import simulation from "./simulation";
-import { forceLink, forceManyBody, forceX, forceY, forceCollide } from "./force";
-import velocityDecay from "./velocityDecay";
+import simulation, { initialState } from "./reducers/simulation";
+import velocityDecay from "./reducers/velocityDecay";
+import * as constants from "./constants";
+import * as utils from "./utils";
 
-export default reduceMergeReducers(
-  simulation,
-  forceLink(),
-  forceManyBody(),
-  forceX(),
-  forceY(),
-  velocityDecay()
-);
+export { initialize, tick, addNode, addLink } from "./actions";
+export { forceCollide, forceLink, forceManyBody, forceX, forceY } from "./reducers/force";
+
+export { getNodes, getLinks } from "./reducers/simulation";
+
+export { constants, utils, velocityDecay, initialState };
+
+export default simulation;
