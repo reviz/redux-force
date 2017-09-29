@@ -2,7 +2,8 @@
 
 [![Build Status][travis-svg]][travis-url]
 
-Force-directed graph layout for redux.
+Force-directed graph layout for redux. 
+
 ![graph animation example](example.gif "Graph animation example")
 > math & physics credits goes to [d3-force](https://github.com/d3/d3-force)
 
