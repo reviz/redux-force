@@ -4,7 +4,7 @@
 
 Force-directed graph layout for redux. 
 
-![graph animation example](example.gif "Graph animation example")
+![graph animation example](example.gif "Graph animation example using @vx/network as graph representation")
 > math & physics credits goes to [d3-force](https://github.com/d3/d3-force)
 
 ## Usage
@@ -12,7 +12,7 @@ Force-directed graph layout for redux.
 `redux-force`
 - **exposes** a set of **specialized reducers** which work together to apply forces to a simulation
 - **expose a set of actions** to add `links` and `nodes` and update the simulation
-- **does not provide** a graphical representation by default but plays well with `react`
+- **does not provide** a graphical representation by default but plays well with `react` (for example [`@vx/network`](https://vx-demo.now.sh/network))
 
 ### Reducers
 
