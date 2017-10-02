@@ -4,7 +4,7 @@ import { xz, xStrengths } from "./initialize";
 import { initialState, defaultX, defaultStrength } from "./index";
 import getStateConstant from "../../../utils/getStateConstant";
 
-export default (x = defaultX, strength = defaultStrength) => {
+export default ({ x = defaultX, strength = defaultStrength } = {}) => {
   x = getStateConstant(x);
   strength = getStateConstant(strength);
 
