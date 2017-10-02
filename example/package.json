@@ -16,7 +16,8 @@
   },
   "scripts": {
     "serve": "webpack-dev-server --hot --inline --config ./webpack.config.js",
-    "install" : "webpack && npm run serve"
+    "build" : "webpack",
+    "install" : "npm run build"
   },
   "devDependencies": {
     "babel-core": "~6.25.0",
