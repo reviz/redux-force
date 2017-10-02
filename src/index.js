@@ -6,7 +6,7 @@ import * as utils from "./utils";
 export { initialize, tick, addNode, addLink } from "./actions";
 export { forceCollide, forceLink, forceManyBody, forceX, forceY } from "./reducers/force";
 
-export { getNodes, getLinks } from "./reducers/simulation";
+export { getNodes, getLinks, shouldTick, findById, findIndexById } from "./reducers/simulation";
 
 export { constants, utils, velocityDecay, initialState };
 
