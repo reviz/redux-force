@@ -25,6 +25,7 @@
     "build:umd:prod": "cross-env BABEL_ENV=es NODE_ENV=production rollup -c -i src/index.js -o dist/redux-force.min.js",
     "build:cjs": "cross-env BABEL_ENV=cjs babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
+    "build": "npm run clean && run-p build:**",
     "website:publish": "cp example/public/* docs/",
     "cover:clean": "rimraf coverage",
     "cover:run": "nyc --show-process-tree npm run --silent mocha test -- --reporter=dot",
