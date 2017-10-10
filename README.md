@@ -71,6 +71,16 @@ Force-directed graph layout for redux.
 - `y` : (`Function|Number`) - a state function invoked on each node to compute its `y`  position
 - `strength` : (`Function|Number`) - a state function invoked on each node to compute its force
 
+#### `forceCenter`
+
+> Creates a new centering force with the specified x- and y- coordinates. If x and y are not specified, they default to ⟨0,0⟩.
+> 
+> https://github.com/d3/d3-force#forceCenter
+
+- `x` : (`Number`)
+- `y` : (`Number`)
+
+
 ## Example
 
 1. Setup the reducers:
