@@ -13,7 +13,7 @@ export {
   forceCenter,
 } from "./reducers/force";
 
-export { getNodes, getLinks, shouldTick, findById, findIndexById } from "./reducers/simulation";
+export { getNodes, getLinks, shouldTick, findById, findIndexById, findLinkById, findLinkIndexById } from "./reducers/simulation";
 
 export { constants, utils, velocityDecay, initialState };
 

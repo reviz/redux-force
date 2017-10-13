@@ -41,6 +41,9 @@ export const getLinks = state => {
   }));
 };
 
+export const findLinkById = ({ links }, { id }) => links.find(link => link.id === id);
+export const findLinkIndexById = ({ links }, { id }) => links.findIndex(link => link.id === id);
+
 export const find = (state, { x, y, radius }) => {
   const n = state.nodes.length;
 
