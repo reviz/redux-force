@@ -17,6 +17,7 @@ export {
   getNodes,
   getLinks,
   shouldTick,
+  find,
   findById,
   findIndexById,
   findLinkById,
