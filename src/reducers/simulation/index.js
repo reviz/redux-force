@@ -2,6 +2,7 @@
 import reduceReducers from "reduce-reducers";
 import initialize from "./initialize";
 import addNode from "./addNode";
+import addNodes from "./addNodes";
 import tick from "./tick";
 
 export const ALPHA = 1;
@@ -69,4 +70,4 @@ export const find = (state, { x, y, radius }) => {
 };
 
 export default (customState = {}) => (state = { ...initialState, ...customState }, action) =>
-  reduceReducers(initialize, addNode, tick)(state, action);
+  reduceReducers(initialize, addNode, addNodes, tick)(state, action);

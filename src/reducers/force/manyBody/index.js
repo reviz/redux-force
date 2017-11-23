@@ -2,6 +2,7 @@ import reduceReducers from "reduce-reducers";
 import stateConstant from "../../../utils/stateConstant";
 import initialize from "./initialize";
 import addNode from "./addNode";
+import addNodes from "./addNodes";
 import tick from "./tick";
 
 export const initialState = {
@@ -17,4 +18,4 @@ export const initialState = {
 export const defaultStrength = stateConstant(-30);
 
 export default ({ strength = defaultStrength } = {}) =>
-  reduceReducers(initialize({ strength }), addNode({ strength }), tick);
+  reduceReducers(initialize({ strength }), addNode({ strength }), addNodes({ strength }), tick);

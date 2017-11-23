@@ -3,7 +3,7 @@ import velocityDecay from "./reducers/velocityDecay";
 import * as constants from "./constants";
 import * as utils from "./utils";
 
-export { initialize, tick, addNode, addLink } from "./actions";
+export { initialize, tick, addNode, addLink, addNodes, addLinks } from "./actions";
 export {
   forceCollide,
   forceLink,

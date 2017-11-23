@@ -2,6 +2,7 @@ import reduceReducers from "reduce-reducers";
 import stateConstant from "../../../utils/stateConstant";
 import initialize from "./initialize";
 import addLink from "./addLink";
+import addLinks from "./addLinks";
 import tick from "./tick";
 
 export const initialState = {
@@ -20,4 +21,9 @@ export const defaultStrength = state => link =>
 export const defaultDistance = stateConstant(30);
 
 export default ({ strength = defaultStrength, distance = defaultDistance } = {}) =>
-  reduceReducers(initialize({ strength, distance }), addLink({ strength, distance }), tick);
+  reduceReducers(
+    initialize({ strength, distance }),
+    addLink({ strength, distance }),
+    addLinks({ strength, distance }),
+    tick
+  );
