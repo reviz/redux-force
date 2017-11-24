@@ -15,17 +15,17 @@ const apply = (node, state) => (quad, x1, _, x2) => {
 
   // Apply the Barnes-Hut approximation if possible.
   // Limit forces for very close nodes; randomize direction if coincident.
-  if (w * w / state.theta2 < l) {
-    if (l < state.distanceMax2) {
+  if (w * w / state.manyBody.theta < l) {
+    if (l < state.manyBody.distanceMax) {
       if (x === 0) (x = jiggle()), (l += x * x);
       if (y === 0) (y = jiggle()), (l += y * y);
-      if (l < state.distanceMin2) l = Math.sqrt(state.distanceMin2 * l);
+      if (l < state.manyBody.distanceMin) l = Math.sqrt(state.manyBody.distanceMin * l);
       node.vx += x * quad.value * state.alpha / l;
       node.vy += y * quad.value * state.alpha / l;
     }
 
     return true;
-  } else if (quad.length || l >= state.distanceMax2) {
+  } else if (quad.length || l >= state.manyBody.distanceMax) {
     // Otherwise, process points directly.
 
     return;
@@ -35,7 +35,7 @@ const apply = (node, state) => (quad, x1, _, x2) => {
   if (quad.data !== node || quad.next) {
     if (x === 0) (x = jiggle()), (l += x * x);
     if (y === 0) (y = jiggle()), (l += y * y);
-    if (l < state.distanceMin2) l = Math.sqrt(state.distanceMin2 * l);
+    if (l < state.manyBody.distanceMin) l = Math.sqrt(state.manyBody.distanceMin * l);
   }
 
   do
